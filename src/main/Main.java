@@ -27,9 +27,11 @@ public class Main {
      */
     public static variables.VariableManager varMan;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         varMan = new VariableManager();
         lines = new ArrayList<>();
+
+        BoolManager.solveBool("100 == 100 or 2 >> 3");
 
         // Get Filename from arguments
         try {

@@ -28,7 +28,7 @@ public class Utils {
      * @return if string is a boolean
      */
     public static boolean isBool(String str) {
-        if(str.equals("true") || str.equals("false")) return true;;
+        if(str.equals("true") || str.equals("false") || BoolManager.isUnsolvedBool(str)) return true;;
         
         return false;
     }
